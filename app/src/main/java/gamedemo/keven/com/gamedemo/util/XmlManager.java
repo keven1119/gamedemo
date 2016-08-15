@@ -69,5 +69,7 @@ public class XmlManager {
         }catch (Exception e){
 
         }
+
+        return false;
     }
 }

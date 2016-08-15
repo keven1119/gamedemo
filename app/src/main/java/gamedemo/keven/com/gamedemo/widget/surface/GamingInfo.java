@@ -19,8 +19,8 @@ public class GamingInfo {
     private MainSurface surface;
     private Activity activity;
     private ArrayList<Fish> fishs = new ArrayList<Fish>();//存放所有的鱼
-    private ShoalManager shoalManager ;
-    private SoundManager soundManager;
+//    private ShoalManager shoalManager ;
+//    private SoundManager soundManager;
     private float cannonLayoutX;
     private float cannonLayoutY;
     private int score = 100;
@@ -72,21 +72,21 @@ public class GamingInfo {
         this.screenWidth = screenWidth;
     }
 
-    public SoundManager getSoundManager() {
-        return soundManager;
-    }
-
-    public void setSoundManager(SoundManager soundManager) {
-        this.soundManager = soundManager;
-    }
-
-    public ShoalManager getShoalManager() {
-        return shoalManager;
-    }
-
-    public void setShoalManager(ShoalManager shoalManager) {
-        this.shoalManager = shoalManager;
-    }
+//    public SoundManager getSoundManager() {
+//        return soundManager;
+//    }
+//
+//    public void setSoundManager(SoundManager soundManager) {
+//        this.soundManager = soundManager;
+//    }
+//
+//    public ShoalManager getShoalManager() {
+//        return shoalManager;
+//    }
+//
+//    public void setShoalManager(ShoalManager shoalManager) {
+//        this.shoalManager = shoalManager;
+//    }
 
     public int getScreenHeight() {
         return screenHeight;
