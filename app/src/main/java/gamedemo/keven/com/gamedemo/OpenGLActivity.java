@@ -22,18 +22,21 @@ public class OpenGLActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mGLSurfaceView = new GLSurfaceView(this);
-        mMainSurface = new MainSurface(this);
-        final ActivityManager activityManager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
-        final ConfigurationInfo deviceConfigurationInfo = activityManager.getDeviceConfigurationInfo();
-        final boolean supportsEs2 = deviceConfigurationInfo.reqGlEsVersion >= 0x20000;
-
-        if(supportsEs2){
-            mGLSurfaceView.setEGLContextClientVersion(2);
-//            mGLSurfaceView.setRenderer(new Less);
-        }else {
-            return;
-        }
-        setContentView(mGLSurfaceView);
+        setContentView(R.layout.activity_main);
+//        mGLSurfaceView = new GLSurfaceView(this);
+//        mMainSurface = new MainSurface(this);
+//        final ActivityManager activityManager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
+//        final ConfigurationInfo deviceConfigurationInfo = activityManager.getDeviceConfigurationInfo();
+//        final boolean supportsEs2 = deviceConfigurationInfo.reqGlEsVersion >= 0x20000;
+//
+//        if(supportsEs2){
+//            mGLSurfaceView.setEGLContextClientVersion(2);
+////            mGLSurfaceView.setRenderer(new Less);
+//        }else {
+//            return;
+//        }
+//        setContentView(mGLSurfaceView);
     }
+
+
 }
